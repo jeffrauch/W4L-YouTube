@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		300A02C11DC8ECE50056DDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A02C01DC8ECE50056DDC1 /* AppDelegate.swift */; };
-		300A02C31DC8ECE50056DDC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A02C21DC8ECE50056DDC1 /* ViewController.swift */; };
 		300A02C61DC8ECE50056DDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300A02C41DC8ECE50056DDC1 /* Main.storyboard */; };
 		300A02C81DC8ECE50056DDC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300A02C71DC8ECE50056DDC1 /* Assets.xcassets */; };
 		300A02CB1DC8ECE50056DDC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300A02C91DC8ECE50056DDC1 /* LaunchScreen.storyboard */; };
 		300A02D61DC8ECE50056DDC1 /* W4L_YouTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A02D51DC8ECE50056DDC1 /* W4L_YouTubeTests.swift */; };
 		300A02E11DC8ECE50056DDC1 /* W4L_YouTubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A02E01DC8ECE50056DDC1 /* W4L_YouTubeUITests.swift */; };
+		300A02F01DC8ED430056DDC1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A02EF1DC8ED430056DDC1 /* MenuViewController.swift */; };
+		300A02F21DC8ED500056DDC1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A02F11DC8ED500056DDC1 /* FeedViewController.swift */; };
+		3094CDC51DCBDFBC001B18E3 /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094CDC41DCBDFBC001B18E3 /* HamburgerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		300A02BD1DC8ECE50056DDC1 /* W4L-YouTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W4L-YouTube.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		300A02C01DC8ECE50056DDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		300A02C21DC8ECE50056DDC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		300A02C51DC8ECE50056DDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		300A02C71DC8ECE50056DDC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		300A02CA1DC8ECE50056DDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		300A02DC1DC8ECE50056DDC1 /* W4L-YouTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "W4L-YouTubeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		300A02E01DC8ECE50056DDC1 /* W4L_YouTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W4L_YouTubeUITests.swift; sourceTree = "<group>"; };
 		300A02E21DC8ECE50056DDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300A02EF1DC8ED430056DDC1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		300A02F11DC8ED500056DDC1 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3094CDC41DCBDFBC001B18E3 /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,8 @@
 		300A02BF1DC8ECE50056DDC1 /* W4L-YouTube */ = {
 			isa = PBXGroup;
 			children = (
+				300A02EE1DC8ED2E0056DDC1 /* ViewControllers */,
 				300A02C01DC8ECE50056DDC1 /* AppDelegate.swift */,
-				300A02C21DC8ECE50056DDC1 /* ViewController.swift */,
 				300A02C41DC8ECE50056DDC1 /* Main.storyboard */,
 				300A02C71DC8ECE50056DDC1 /* Assets.xcassets */,
 				300A02C91DC8ECE50056DDC1 /* LaunchScreen.storyboard */,
@@ -123,6 +127,16 @@
 				300A02E21DC8ECE50056DDC1 /* Info.plist */,
 			);
 			path = "W4L-YouTubeUITests";
+			sourceTree = "<group>";
+		};
+		300A02EE1DC8ED2E0056DDC1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				300A02EF1DC8ED430056DDC1 /* MenuViewController.swift */,
+				300A02F11DC8ED500056DDC1 /* FeedViewController.swift */,
+				3094CDC41DCBDFBC001B18E3 /* HamburgerViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				300A02C31DC8ECE50056DDC1 /* ViewController.swift in Sources */,
+				3094CDC51DCBDFBC001B18E3 /* HamburgerViewController.swift in Sources */,
+				300A02F01DC8ED430056DDC1 /* MenuViewController.swift in Sources */,
+				300A02F21DC8ED500056DDC1 /* FeedViewController.swift in Sources */,
 				300A02C11DC8ECE50056DDC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +519,7 @@
 				300A02E71DC8ECE50056DDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		300A02E81DC8ECE50056DDC1 /* Build configuration list for PBXNativeTarget "W4L-YouTubeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +528,7 @@
 				300A02EA1DC8ECE50056DDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		300A02EB1DC8ECE50056DDC1 /* Build configuration list for PBXNativeTarget "W4L-YouTubeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +537,7 @@
 				300A02ED1DC8ECE50056DDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
